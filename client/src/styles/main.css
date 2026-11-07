@@ -1,0 +1,46 @@
+/* ================================
+   🌸 MAIN BASE STYLES
+   Neutral • Non-conflicting
+================================ */
+
+/* Typography helpers */
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+  color: inherit;
+}
+
+p {
+  line-height: 1.8;
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Form elements (neutral only) */
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  font-size: 15px;
+  background: var(--white);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
+/* ❌ NO global button styles here */
+/* Buttons must use .btn-primary or .btn-secondary */

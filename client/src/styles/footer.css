@@ -1,0 +1,342 @@
+/* =========================================
+   LUXURY FOOTER
+========================================= */
+
+.lux-footer {
+  position: relative;
+
+  overflow: hidden;
+
+  padding-top: 90px;
+
+  margin-top: 120px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fdf4ff 0%,
+      #f8f5ff 50%,
+      #fff7fb 100%
+    );
+
+  border-top:
+    1px solid rgba(255,255,255,0.5);
+}
+
+/* =========================================
+   GLOW EFFECTS
+========================================= */
+
+.footer-glow {
+  position: absolute;
+
+  border-radius: 999px;
+
+  filter: blur(90px);
+
+  opacity: 0.18;
+
+  z-index: 0;
+}
+
+.footer-glow-1 {
+  width: 300px;
+  height: 300px;
+
+  background: #ec4899;
+
+  top: -80px;
+  left: -80px;
+}
+
+.footer-glow-2 {
+  width: 280px;
+  height: 280px;
+
+  background: #7c3aed;
+
+  bottom: -120px;
+  right: -60px;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.footer-container {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding: 0 40px 70px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.4fr
+    1fr
+    1fr
+    1.2fr;
+
+  gap: 50px;
+}
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand h2 {
+  font-size: 34px;
+
+  margin: 18px 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ec4899,
+      #7c3aed
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-brand p {
+  color: #6b7280;
+
+  line-height: 1.9;
+
+  max-width: 420px;
+}
+
+.footer-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.65);
+
+  backdrop-filter: blur(12px);
+
+  color: #7c3aed;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* =========================================
+   SOCIALS
+========================================= */
+
+.footer-socials {
+  display: flex;
+
+  gap: 16px;
+
+  margin-top: 28px;
+}
+
+.footer-socials a {
+  width: 46px;
+
+  height: 46px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-decoration: none;
+
+  color: #7c3aed;
+
+  background:
+    rgba(255,255,255,0.7);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 12px 25px rgba(0,0,0,0.06);
+
+  transition: 0.35s ease;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-5px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #ec4899,
+      #7c3aed
+    );
+
+  color: white;
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+.footer-links h4,
+.footer-newsletter h4 {
+  font-size: 20px;
+
+  margin-bottom: 24px;
+
+  color: #1f2937;
+}
+
+.footer-links {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.footer-links a {
+  margin-bottom: 14px;
+
+  text-decoration: none;
+
+  color: #6b7280;
+
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #7c3aed;
+
+  transform: translateX(4px);
+}
+
+/* =========================================
+   NEWSLETTER
+========================================= */
+
+.footer-newsletter p {
+  color: #6b7280;
+
+  line-height: 1.8;
+
+  margin-bottom: 24px;
+}
+
+.newsletter-box {
+  display: flex;
+
+  align-items: center;
+
+  background:
+    rgba(255,255,255,0.7);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.05);
+}
+
+.newsletter-box input {
+  flex: 1;
+
+  border: none;
+
+  background: transparent;
+
+  padding: 18px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.newsletter-box button {
+  border: none;
+
+  padding: 18px 24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ec4899,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+  position: relative;
+
+  z-index: 2;
+
+  padding: 24px;
+
+  text-align: center;
+
+  color: #6b7280;
+
+  border-top:
+    1px solid rgba(0,0,0,0.05);
+
+  background:
+    rgba(255,255,255,0.4);
+
+  backdrop-filter: blur(12px);
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 968px) {
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    padding: 0 24px 60px;
+  }
+
+  .footer-brand h2 {
+    font-size: 28px;
+  }
+
+  .newsletter-box {
+    flex-direction: column;
+  }
+
+  .newsletter-box input,
+  .newsletter-box button {
+    width: 100%;
+  }
+}

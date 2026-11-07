@@ -1,0 +1,57 @@
+/* ================================
+   🌸 ABOUT PAGE – SUMEDHA HANDMADE
+   Warm • Emotional • Minimal
+================================ */
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 20px 120px;
+  text-align: center;
+}
+
+/* Heading */
+.about-container h1 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 36px;
+  background: linear-gradient(
+    90deg,
+    var(--purple),
+    var(--pink)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Text blocks */
+.about-text {
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Soft emphasis (optional spans inside text) */
+.about-text strong {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 80px 20px 100px;
+  }
+
+  .about-container h1 {
+    font-size: 32px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+}

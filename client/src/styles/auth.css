@@ -1,0 +1,73 @@
+/* ================================
+   🔐 AUTH PAGES – LOGIN / SIGNUP
+================================ */
+
+.auth-container {
+  max-width: 420px;
+  margin: 120px auto;
+  padding: 40px 28px;
+  background: var(--white);
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.auth-container h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--purple),
+    var(--pink)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.auth-container p {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.auth-form input {
+  margin-bottom: 16px;
+}
+
+.auth-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.auth-error {
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--pink);
+}
+
+.auth-success { margin-top: 14px; color: #32704a; font-size: 14px; }
+/* ================================
+   🔗 AUTH BELOW-FORM LINKS
+================================ */
+
+.auth-links {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth-links .btn-secondary {
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Admin button slightly muted */
+.admin-link {
+  opacity: 0.85;
+}
+
+.admin-link:hover {
+  opacity: 1;
+}

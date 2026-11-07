@@ -1,0 +1,827 @@
+/* =========================================
+   PREMIUM PRODUCT DETAILS PAGE
+   AMAZON + LUXURY D2C STYLE
+========================================= */
+
+.premium-pdp {
+
+  padding:
+    60px 0 120px;
+
+  min-height: 100vh;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.pdp-container {
+
+  width: 100%;
+
+  max-width: 1450px;
+
+  margin: auto;
+
+  padding:
+    0 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.1fr 0.9fr;
+
+  gap: 50px;
+
+  align-items: start;
+}
+
+/* =========================================
+   GALLERY
+========================================= */
+
+.pdp-gallery {
+
+  display: flex;
+
+  gap: 22px;
+
+  position: sticky;
+
+  top: 110px;
+}
+
+/* =========================================
+   THUMBNAILS
+========================================= */
+
+.pdp-thumbnails {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.pdp-thumb {
+
+  width: 92px;
+  height: 92px;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  background:
+    rgba(255,255,255,0.78);
+
+  backdrop-filter:
+    blur(14px);
+
+  border:
+    2px solid transparent;
+
+  cursor: pointer;
+
+  transition:
+    all 0.35s ease;
+
+  box-shadow:
+    0 10px 28px rgba(0,0,0,0.06);
+}
+
+.pdp-thumb:hover {
+
+  transform:
+    translateY(-4px);
+
+  border-color:
+    rgba(169,27,96,0.24);
+}
+
+.pdp-thumb.active {
+
+  border-color:
+    var(--secondary);
+
+  box-shadow:
+    0 18px 42px rgba(169,27,96,0.18);
+}
+
+.pdp-thumb img,
+.pdp-thumb video {
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* =========================================
+   MAIN MEDIA
+========================================= */
+
+.pdp-main-media {
+
+  flex: 1;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 38px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.95),
+      rgba(255,244,248,0.92)
+    );
+
+  border:
+    1px solid rgba(118,74,141,0.08);
+
+  min-height: 760px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 50px;
+
+  box-shadow:
+    0 35px 90px rgba(118,74,141,0.12);
+}
+
+/* GLOW */
+
+.pdp-main-media::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(169,27,96,0.08),
+      transparent 35%
+    );
+
+  pointer-events: none;
+}
+
+/* IMAGE */
+
+.pdp-main-media img {
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  transition:
+    transform 0.8s ease;
+}
+
+.pdp-main-media:hover img {
+
+  transform:
+    scale(1.08);
+}
+
+/* VIDEO */
+
+.pdp-main-media video {
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  border-radius: 28px;
+}
+
+/* =========================================
+   PRODUCT INFO
+========================================= */
+
+.pdp-info {
+
+  position: sticky;
+
+  top: 110px;
+
+  padding:
+    40px;
+
+  border-radius: 36px;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  backdrop-filter:
+    blur(18px);
+
+  border:
+    1px solid rgba(118,74,141,0.08);
+
+  box-shadow:
+    0 30px 80px rgba(118,74,141,0.10);
+}
+
+/* =========================================
+   BADGES
+========================================= */
+
+.pdp-badges {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 24px;
+}
+
+.pdp-badges span {
+
+  padding:
+    10px 18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.75);
+
+  backdrop-filter:
+    blur(14px);
+
+  color:
+    var(--secondary);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+
+  text-transform: uppercase;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.pdp-info h1 {
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(3rem,4vw,4.5rem);
+
+  line-height: 1;
+
+  margin-bottom: 24px;
+
+  color:
+    var(--dark);
+}
+
+/* =========================================
+   RATING
+========================================= */
+
+.pdp-rating {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding:
+    12px 20px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,212,227,0.24);
+
+  color:
+    #d97706;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  margin-bottom: 28px;
+}
+
+.pdp-rating span {
+
+  color:
+    var(--gray);
+
+  font-size: 14px;
+}
+
+/* =========================================
+   PRICE
+========================================= */
+
+.pdp-price {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 24px;
+}
+
+.old-price {
+
+  font-size: 1.2rem;
+
+  color:
+    #9ca3af;
+
+  text-decoration:
+    line-through;
+}
+
+.pdp-price h2 {
+
+  font-size:
+    3rem;
+
+  font-weight: 800;
+
+  background:
+    var(--gradient-primary);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color:
+    transparent;
+}
+
+/* =========================================
+   STOCK
+========================================= */
+
+.pdp-stock {
+
+  width: fit-content;
+
+  padding:
+    12px 18px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+}
+
+.pdp-stock.in {
+
+  background:
+    rgba(16,185,129,0.12);
+
+  color:
+    #059669;
+}
+
+.pdp-stock.out {
+
+  background:
+    rgba(239,68,68,0.12);
+
+  color:
+    #dc2626;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.pdp-description {
+
+  color:
+    var(--gray);
+
+  font-size: 16px;
+
+  line-height: 2;
+
+  margin-bottom: 34px;
+}
+
+/* =========================================
+   CATEGORIES
+========================================= */
+
+.pdp-categories {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 36px;
+}
+
+.pdp-categories span {
+
+  padding:
+    11px 18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  backdrop-filter:
+    blur(14px);
+
+  color:
+    var(--primary);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 18px rgba(0,0,0,0.05);
+
+  transition:
+    all 0.3s ease;
+}
+
+.pdp-categories span:hover {
+
+  transform:
+    translateY(-3px);
+
+  background:
+    var(--gradient-primary);
+
+  color:
+    white;
+}
+
+/* =========================================
+   TRUST
+========================================= */
+
+.pdp-trust {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap: 14px;
+
+  margin-bottom: 40px;
+}
+
+.pdp-trust div {
+
+  padding:
+    18px 16px;
+
+  border-radius: 22px;
+
+  background:
+    rgba(255,255,255,0.68);
+
+  backdrop-filter:
+    blur(14px);
+
+  text-align: center;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color:
+    var(--dark);
+
+  box-shadow:
+    0 10px 28px rgba(0,0,0,0.05);
+
+  transition:
+    all 0.3s ease;
+}
+
+.pdp-trust div:hover {
+
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 18px 40px rgba(118,74,141,0.10);
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.pdp-actions {
+
+  display: flex;
+
+  gap: 18px;
+}
+
+/* CART */
+
+.pdp-cart-btn {
+
+  flex: 1;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border: none;
+
+  padding:
+    20px 24px;
+
+  border-radius: 22px;
+
+  background:
+    var(--gradient-primary);
+
+  color:
+    white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+
+  transition:
+    all 0.35s ease;
+
+  box-shadow:
+    0 22px 55px rgba(169,27,96,0.22);
+}
+
+/* SHIMMER */
+
+.pdp-cart-btn::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 100%;
+  height: 100%;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent,
+      rgba(255,255,255,0.32),
+      transparent
+    );
+
+  transition:
+    0.7s ease;
+}
+
+.pdp-cart-btn:hover::before {
+  left: 120%;
+}
+
+.pdp-cart-btn:hover {
+
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 32px 75px rgba(169,27,96,0.30);
+}
+
+/* WISHLIST */
+
+.pdp-wishlist {
+
+  width: 170px;
+
+  border: none;
+
+  border-radius: 22px;
+
+  background:
+    rgba(255,255,255,0.75);
+
+  backdrop-filter:
+    blur(14px);
+
+  color:
+    var(--primary);
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  transition:
+    all 0.3s ease;
+
+  box-shadow:
+    0 12px 28px rgba(0,0,0,0.05);
+}
+
+.pdp-wishlist:hover {
+
+  transform:
+    translateY(-4px);
+}
+
+.pdp-wishlist.active {
+
+  background:
+    var(--gradient-primary);
+
+  color:
+    white;
+}
+
+/* =========================================
+   RELATED PRODUCTS
+========================================= */
+
+.related-section {
+
+  max-width: 1450px;
+
+  margin:
+    120px auto 0;
+
+  padding:
+    0 30px;
+}
+
+.related-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap: 28px;
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.pdp-loading {
+
+  min-height: 80vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 1.5rem;
+
+  font-weight: 700;
+
+  color:
+    var(--primary);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .pdp-container {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 60px;
+  }
+
+  .pdp-gallery,
+  .pdp-info {
+
+    position: relative;
+
+    top: unset;
+  }
+
+  .related-grid {
+
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .pdp-container {
+
+    padding:
+      0 18px;
+  }
+
+  .pdp-gallery {
+
+    flex-direction: column-reverse;
+  }
+
+  .pdp-thumbnails {
+
+    flex-direction: row;
+
+    overflow-x: auto;
+  }
+
+  .pdp-main-media {
+
+    min-height: 500px;
+
+    padding: 30px;
+  }
+
+  .pdp-info {
+
+    padding: 28px;
+  }
+
+  .pdp-trust {
+
+    grid-template-columns:
+      1fr;
+  }
+
+  .pdp-actions {
+
+    flex-direction: column;
+  }
+
+  .pdp-wishlist {
+    width: 100%;
+  }
+
+  .related-grid {
+
+    grid-template-columns:
+      1fr;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .pdp-main-media {
+
+    min-height: 380px;
+  }
+
+  .pdp-info h1 {
+
+    font-size: 2.5rem;
+  }
+
+  .pdp-price h2 {
+
+    font-size: 2.3rem;
+  }
+}

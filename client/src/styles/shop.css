@@ -1,0 +1,527 @@
+/* =========================================
+   SHOP PAGE — LUXURY VERSION
+   Sumedha Handmade
+========================================= */
+
+.shop-page {
+  min-height: 100vh;
+
+  padding-bottom: 120px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fff7fb 0%,
+      #f8f5ff 45%,
+      #ffffff 100%
+    );
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.shop-hero {
+  position: relative;
+
+  overflow: hidden;
+
+  padding:
+    130px 20px
+    80px;
+
+  text-align: center;
+}
+
+.shop-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 380px;
+  height: 380px;
+
+  background:
+    rgba(236,72,153,0.14);
+
+  border-radius: 999px;
+
+  filter: blur(90px);
+
+  top: -120px;
+  left: -120px;
+}
+
+.shop-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  background:
+    rgba(124,58,237,0.14);
+
+  border-radius: 999px;
+
+  filter: blur(90px);
+
+  bottom: -120px;
+  right: -100px;
+}
+
+.shop-hero span {
+  position: relative;
+
+  z-index: 2;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding:
+    12px 22px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  backdrop-filter: blur(14px);
+
+  color: #7c3aed;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.05);
+}
+
+.shop-hero h1 {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 28px;
+
+  font-size: 68px;
+
+  line-height: 1.06;
+
+  font-weight: 700;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ec4899,
+      #7c3aed
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.shop-hero p {
+  position: relative;
+
+  z-index: 2;
+
+  margin:
+    26px auto 0;
+
+  max-width: 760px;
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  color: #6b7280;
+}
+
+/* =========================================
+   SEARCH + SORT CONTROLS
+========================================= */
+
+.shop-controls {
+  max-width: 1150px;
+
+  margin:
+    0 auto 26px;
+
+  padding:
+    0 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   SEARCH BOX
+========================================= */
+
+.search-box {
+  flex: 0.7;
+
+  min-width: 240px;
+
+  max-width: 460px;
+}
+
+.search-box input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  padding:
+    16px 22px;
+
+  border-radius: 18px;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  backdrop-filter: blur(16px);
+
+  font-size: 14px;
+
+  color: #374151;
+
+  box-shadow:
+    0 14px 32px rgba(124,58,237,0.08);
+
+  transition: 0.35s ease;
+}
+
+.search-box input:focus {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 22px 45px rgba(124,58,237,0.14);
+}
+
+.search-box input::placeholder {
+  color: #9ca3af;
+}
+
+/* =========================================
+   SORT BOX
+========================================= */
+
+.sort-box select {
+  border: none;
+
+  outline: none;
+
+  padding:
+    16px 20px;
+
+  min-width: 200px;
+
+  border-radius: 18px;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  backdrop-filter: blur(16px);
+
+  font-size: 14px;
+
+  color: #374151;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 14px 32px rgba(124,58,237,0.08);
+}
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.shop-filters {
+  max-width: 1250px;
+
+  margin:
+    0 auto 48px;
+
+  padding:
+    0 40px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 14px;
+}
+
+/* =========================================
+   FILTER CHIP
+========================================= */
+
+.filter-chip {
+  border: none;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  min-width: 135px;
+
+  padding:
+    14px 18px;
+
+  border-radius: 18px;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  backdrop-filter: blur(16px);
+
+  color: #4b5563;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.05);
+
+  transition: all 0.35s ease;
+}
+
+.filter-chip span {
+  font-size: 16px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.filter-chip:hover {
+  transform:
+    translateY(-4px)
+    scale(1.02);
+
+  box-shadow:
+    0 18px 40px rgba(124,58,237,0.12);
+}
+
+.filter-chip.active {
+  background:
+    linear-gradient(
+      135deg,
+      #ec4899,
+      #7c3aed
+    );
+
+  color: white;
+
+  box-shadow:
+    0 18px 40px rgba(124,58,237,0.24);
+}
+
+/* =========================================
+   RESULTS
+========================================= */
+
+.shop-results {
+  max-width: 1300px;
+
+  margin:
+    0 auto 36px;
+
+  padding:
+    0 40px;
+}
+
+.shop-results p {
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+.shop-results strong {
+  color: #7c3aed;
+}
+
+/* =========================================
+   PRODUCTS
+========================================= */
+
+.shop-products {
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding:
+    0 40px;
+}
+
+.product-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+  gap: 36px;
+}
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.empty-products {
+  text-align: center;
+
+  padding:
+    120px 20px;
+
+  border-radius: 36px;
+
+  background:
+    rgba(255,255,255,0.62);
+
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 20px 50px rgba(124,58,237,0.08);
+}
+
+.empty-products h3 {
+  font-size: 34px;
+
+  margin-bottom: 14px;
+
+  color: #1f2937;
+}
+
+.empty-products p {
+  color: #6b7280;
+
+  font-size: 16px;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+.shop-status {
+  text-align: center;
+
+  margin-top: 140px;
+
+  color: #6b7280;
+
+  font-size: 18px;
+}
+
+.shop-status.error {
+  color: #dc2626;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 968px) {
+
+  .shop-hero {
+    padding:
+      110px 20px
+      70px;
+  }
+
+  .shop-hero h1 {
+    font-size: 44px;
+  }
+
+  .shop-hero p {
+    font-size: 16px;
+  }
+
+  .shop-controls,
+  .shop-filters,
+  .shop-products,
+  .shop-results {
+    padding: 0 20px;
+  }
+
+  .shop-controls {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .search-box,
+  .sort-box {
+    width: 100%;
+
+    max-width: 100%;
+  }
+
+  .sort-box select {
+    width: 100%;
+  }
+
+  .shop-filters {
+    justify-content: center;
+
+    gap: 12px;
+  }
+
+  .filter-chip {
+    min-width: auto;
+
+    padding:
+      12px 16px;
+
+    font-size: 13px;
+  }
+
+  .filter-chip span {
+    font-size: 15px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+  .empty-products {
+    padding:
+      80px 20px;
+  }
+
+  .empty-products h3 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,16 @@
+.my-orders-page {
+  width: min(100% - 40px, 900px);
+  margin: 0 auto;
+  padding: clamp(28px, 6vw, 60px) 0;
+}
+.my-orders-page > h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 2.8rem); }
+.my-orders-page > p { margin: 12px 0; }
+.my-orders-error { padding: 24px 0; color: #b42318; }
+.order-card-customer { margin-top: 24px; padding: 20px; border-radius: 14px; background: #fff; box-shadow: 0 10px 30px rgb(0 0 0 / 6%); overflow-wrap: anywhere; }
+.customer-order-coupon { color: #39714b; }
+.my-orders-page button { min-height: 44px; }
+@media (max-width: 560px) {
+  .my-orders-page { width: min(100% - 28px, 900px); padding-top: 28px; }
+  .order-card-customer { padding: 16px; }
+  .my-orders-page button { width: 100%; }
+}

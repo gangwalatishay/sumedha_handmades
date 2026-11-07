@@ -1,0 +1,799 @@
+/* =========================================
+   ADMIN PAGE — LUXURY VERSION
+========================================= */
+
+.admin-page {
+  min-height: 100vh;
+
+  padding:
+    120px 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fff7fb 0%,
+      #f8f5ff 45%,
+      #ffffff 100%
+    );
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* =========================================
+   GLOW EFFECTS
+========================================= */
+
+.admin-page::before {
+  content: "";
+
+  position: absolute;
+
+  width: 340px;
+  height: 340px;
+
+  background:
+    rgba(236,72,153,0.14);
+
+  border-radius: 999px;
+
+  filter: blur(90px);
+
+  top: -100px;
+  left: -100px;
+}
+
+.admin-page::after {
+  content: "";
+
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  background:
+    rgba(124,58,237,0.14);
+
+  border-radius: 999px;
+
+  filter: blur(90px);
+
+  bottom: -100px;
+  right: -100px;
+}
+
+/* =========================================
+   ADMIN CARD
+========================================= */
+
+.admin-card {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 760px;
+
+  padding:
+    50px;
+
+  border-radius: 36px;
+
+  background:
+    rgba(255,255,255,0.68);
+
+  backdrop-filter: blur(22px);
+
+  border:
+    1px solid rgba(255,255,255,0.4);
+
+  box-shadow:
+    0 24px 60px rgba(124,58,237,0.1);
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.admin-header {
+  text-align: center;
+
+  margin-bottom: 42px;
+}
+
+.admin-header span {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding:
+    12px 22px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.7);
+
+  backdrop-filter: blur(14px);
+
+  color: #7c3aed;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.05);
+}
+
+.admin-header h1 {
+  margin-top: 28px;
+
+  font-size: 52px;
+
+  line-height: 1.08;
+
+  font-weight: 700;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ec4899,
+      #7c3aed
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.admin-header p {
+  margin-top: 22px;
+
+  color: #6b7280;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.admin-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.admin-form input,
+.admin-form textarea {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  padding:
+    18px 22px;
+
+  border-radius: 20px;
+
+  background:
+    rgba(255,255,255,0.82);
+
+  backdrop-filter: blur(16px);
+
+  font-size: 15px;
+
+  color: #374151;
+
+  box-shadow:
+    0 14px 32px rgba(124,58,237,0.06);
+
+  transition: 0.35s ease;
+}
+
+.admin-form textarea {
+  min-height: 140px;
+
+  resize: vertical;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 22px 45px rgba(124,58,237,0.14);
+}
+
+.admin-form input::placeholder,
+.admin-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* =========================================
+   CHECKBOXES
+========================================= */
+
+.admin-checkboxes {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 16px;
+}
+
+.checkbox-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding:
+    14px 18px;
+
+  border-radius: 18px;
+
+  background:
+    rgba(255,255,255,0.7);
+
+  backdrop-filter: blur(14px);
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #4b5563;
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.04);
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.checkbox-label:hover {
+  transform:
+    translateY(-3px);
+}
+
+.checkbox-label input {
+  width: 18px;
+  height: 18px;
+
+  accent-color: #7c3aed;
+}
+
+/* =========================================
+   CATEGORY SECTION
+========================================= */
+
+.gift-category-group {
+  margin-top: 10px;
+}
+
+.gift-category-group p {
+  margin-bottom: 18px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #374151;
+}
+
+.gift-options {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 14px;
+}
+
+/* =========================================
+   CATEGORY CHIP
+========================================= */
+
+.gift-chip {
+  border: none;
+
+  cursor: pointer;
+
+  padding:
+    13px 18px;
+
+  border-radius: 16px;
+
+  background:
+    rgba(255,255,255,0.7);
+
+  backdrop-filter: blur(14px);
+
+  color: #4b5563;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.05);
+
+  transition: all 0.3s ease;
+}
+
+.gift-chip:hover {
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 16px 35px rgba(124,58,237,0.12);
+}
+
+.gift-chip.active {
+  background:
+    linear-gradient(
+      135deg,
+      #ec4899,
+      #7c3aed
+    );
+
+  color: white;
+
+  box-shadow:
+    0 18px 40px rgba(124,58,237,0.22);
+}
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.admin-submit-btn {
+  border: none;
+
+  margin-top: 12px;
+
+  padding:
+    18px 26px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ec4899,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.35s ease;
+
+  box-shadow:
+    0 20px 45px rgba(124,58,237,0.24);
+}
+
+.admin-submit-btn:hover {
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 28px 60px rgba(124,58,237,0.3);
+}
+
+.admin-submit-btn:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+}
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.admin-message {
+  margin-top: 28px;
+
+  padding:
+    18px 22px;
+
+  border-radius: 18px;
+
+  background:
+    rgba(255,255,255,0.75);
+
+  backdrop-filter: blur(16px);
+
+  text-align: center;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #374151;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.05);
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .admin-page {
+    padding:
+      90px 16px;
+  }
+
+  .admin-card {
+    padding: 32px 24px;
+  }
+
+  .admin-header h1 {
+    font-size: 38px;
+  }
+
+  .admin-header p {
+    font-size: 15px;
+  }
+
+  .admin-checkboxes {
+    flex-direction: column;
+  }
+
+  .gift-options {
+    gap: 10px;
+  }
+
+  .gift-chip {
+    width: 100%;
+
+    text-align: center;
+  }
+}
+/* =========================================
+   EDIT PRODUCT ACTIONS
+========================================= */
+
+.admin-actions-row {
+  display: flex;
+
+  gap: 16px;
+
+  margin-top: 10px;
+}
+
+/* SECONDARY BUTTON */
+
+.secondary-admin-btn {
+  flex: 1;
+
+  border: none;
+
+  padding:
+    18px 26px;
+
+  border-radius: 20px;
+
+  background:
+    rgba(124,58,237,0.1);
+
+  color: #7c3aed;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.35s ease;
+}
+
+.secondary-admin-btn:hover {
+  transform:
+    translateY(-4px);
+
+  background:
+    rgba(124,58,237,0.16);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .admin-actions-row {
+    flex-direction: column;
+  }
+}
+/* =========================================
+   MEDIA UPLOAD UI
+========================================= */
+
+.media-upload-group {
+  margin-top: 10px;
+
+  padding: 26px;
+
+  border-radius: 28px;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  backdrop-filter: blur(18px);
+
+  border:
+    2px dashed rgba(124,58,237,0.18);
+
+  box-shadow:
+    0 18px 45px rgba(124,58,237,0.06);
+
+  transition: 0.35s ease;
+}
+
+.media-upload-group:hover {
+  transform:
+    translateY(-4px);
+
+  border-color:
+    rgba(124,58,237,0.34);
+
+  box-shadow:
+    0 24px 60px rgba(124,58,237,0.12);
+}
+
+/* LABEL */
+
+.media-upload-group label {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #374151;
+}
+
+/* FILE INPUT */
+
+.media-upload-group input[type="file"] {
+  width: 100%;
+
+  padding:
+    18px;
+
+  border-radius: 20px;
+
+  background:
+    rgba(248,245,255,0.9);
+
+  border: none;
+
+  cursor: pointer;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  transition: 0.3s ease;
+}
+
+.media-upload-group input[type="file"]:hover {
+  background:
+    rgba(243,232,255,0.9);
+}
+
+/* FILE BUTTON */
+
+.media-upload-group
+input[type="file"]::file-selector-button {
+
+  border: none;
+
+  margin-right: 18px;
+
+  padding:
+    12px 18px;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ec4899,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.media-upload-group
+input[type="file"]::file-selector-button:hover {
+
+  transform:
+    translateY(-2px);
+}
+
+/* =========================================
+   UPLOADING TEXT
+========================================= */
+
+.uploading-text {
+  margin-top: 16px;
+
+  color: #7c3aed;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+/* =========================================
+   MEDIA PREVIEW GRID
+========================================= */
+
+.media-preview-grid {
+  margin-top: 28px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+  gap: 20px;
+}
+
+/* =========================================
+   PREVIEW CARD
+========================================= */
+
+.media-preview-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 18px 45px rgba(124,58,237,0.08);
+
+  transition: 0.35s ease;
+}
+
+.media-preview-card:hover {
+  transform:
+    translateY(-6px);
+
+  box-shadow:
+    0 26px 65px rgba(124,58,237,0.16);
+}
+
+/* IMAGE */
+
+.media-preview-card img {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* VIDEO */
+
+.media-preview-card video {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+
+  display: block;
+
+  background: black;
+}
+
+/* =========================================
+   MEDIA TYPE BADGE
+========================================= */
+
+.media-preview-card::after {
+  content: "MEDIA";
+
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  padding:
+    8px 12px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(0,0,0,0.6);
+
+  backdrop-filter: blur(10px);
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .media-upload-group {
+    padding: 20px;
+  }
+
+  .media-preview-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+
+    gap: 14px;
+  }
+
+  .media-preview-card img,
+  .media-preview-card video {
+    height: 170px;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .media-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}

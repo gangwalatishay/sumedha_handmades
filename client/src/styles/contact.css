@@ -1,0 +1,69 @@
+/* ================================
+   🌸 CONTACT PAGE – SUMEDHA HANDMADE
+   Warm • Personal • Trustworthy
+================================ */
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 20px 120px;
+  text-align: center;
+}
+
+/* Heading */
+.contact-container h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  background: linear-gradient(
+    90deg,
+    var(--purple),
+    var(--pink)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Intro text */
+.contact-container p {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+
+/* Contact info block */
+.contact-info {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Individual info lines */
+.contact-info p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* Optional emphasis */
+.contact-info p span {
+  color: var(--purple);
+  font-weight: 500;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 80px 20px 100px;
+  }
+
+  .contact-container h1 {
+    font-size: 32px;
+  }
+
+  .contact-container p {
+    font-size: 16px;
+  }
+}

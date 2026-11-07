@@ -1,0 +1,121 @@
+/* ================================
+   🌸 WISHLIST PAGE – SUMEDHA HANDMADE
+   Emotional • Calm • Personal
+================================ */
+
+.wishlist-container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+/* Header */
+.wishlist-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.wishlist-header h1 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  background: linear-gradient(
+    90deg,
+    var(--purple),
+    var(--pink)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wishlist-header p {
+  color: var(--text-muted);
+  font-size: 17px;
+}
+
+/* Empty state */
+.wishlist-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text-muted);
+}
+
+.wishlist-empty span {
+  font-size: 42px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.wishlist-empty p {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.wishlist-empty small {
+  font-size: 14px;
+}
+
+/* Grid */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* Card */
+.wishlist-card {
+  background: var(--white);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.wishlist-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+/* Info */
+.wishlist-info {
+  padding: 22px;
+  text-align: center;
+}
+
+.wishlist-info h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
+
+.wishlist-info .price {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+/* Actions */
+.wishlist-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .wishlist-header h1 {
+    font-size: 34px;
+  }
+
+  .wishlist-grid {
+    gap: 26px;
+  }
+}

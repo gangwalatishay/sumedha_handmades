@@ -1,0 +1,91 @@
+/* ================================
+   👤 MY ACCOUNT – PROFILE PAGE
+   Calm • Personal • Premium
+================================ */
+
+.profile-container {
+  padding-top: 120px;
+  padding-bottom: 140px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  background: var(--white);
+  padding: 50px 40px;
+  border-radius: 32px;
+  text-align: center;
+  max-width: 460px;
+  width: 100%;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.profile-card h1 span {
+  background: linear-gradient(
+    90deg,
+    var(--purple),
+    var(--pink)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-subtitle {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 36px;
+}
+
+/* Actions */
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.profile-actions .btn-secondary {
+  width: 100%;
+  font-size: 15px;
+}
+
+/* Divider */
+.profile-divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.12),
+    transparent
+  );
+  margin: 34px 0;
+}
+
+/* Logout */
+.profile-logout {
+  background: transparent;
+  border: none;
+  color: var(--pink);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-logout:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 44px 26px;
+  }
+
+  .profile-card h1 {
+    font-size: 26px;
+  }
+}

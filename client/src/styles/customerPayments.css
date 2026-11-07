@@ -1,0 +1,5 @@
+.customer-payment { color: #67564c; font-size: 13px; font-weight: 700; }
+.customer-payment-paid,.customer-payment-refunded { color: #3e7650; }
+.customer-payment-pending,.customer-payment-refund-pending { color: #97631b; }
+.customer-payment-failed,.customer-payment-refund-failed { color: #a34e49; }
+.customer-payment-reason { color: #8b817a; font-size: 12px; }
